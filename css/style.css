@@ -5,14 +5,14 @@
 
 /* Color Variables */
 :root {
-  --unimelb-blue: #000F46;       /* CVRL / UoM navy (matches the logo) */
-  --unimelb-blue-light: #1F4E9C;
-  --unimelb-blue-dark: #000A30;
+  --unimelb-blue: #003366;
+  --unimelb-blue-light: #0055A4;
+  --unimelb-blue-dark: #001A33;
   --text-dark: #333333;
   --text-muted: #666666;
   --bg-light: #f8f9fa;
   --border-color: #dee2e6;
-  --link-color: #1F4E9C;
+  --link-color: #0055A4;
 }
 
 /* Base Styles */
@@ -61,7 +61,7 @@ a:hover {
 }
 
 .logo {
-  height: 46px;
+  height: 68px;
   width: auto;
 }
 
@@ -134,7 +134,7 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(transparent, rgba(0, 15, 70, 0.92));
+  background: linear-gradient(transparent, rgba(0, 51, 102, 0.92));
   padding: 60px 0 30px;
 }
 
@@ -176,7 +176,7 @@ a:hover {
   left: 0;
   right: 0;
   top: 0;
-  background: linear-gradient(transparent 30%, rgba(0, 15, 70, 0.85));
+  background: linear-gradient(transparent 30%, rgba(0, 51, 102, 0.85));
   display: flex;
   align-items: flex-end;
   padding-bottom: 20px;
@@ -220,7 +220,7 @@ a:hover {
   color: #fff;
   text-decoration: none;
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 15, 70, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.2);
 }
 
 .nav-card i {
@@ -1003,7 +1003,7 @@ h4 {
   display: flex;
   align-items: center;
   padding: 0;
-  background: linear-gradient(90deg, rgba(0, 15, 70, 0.94) 0%, rgba(0, 15, 70, 0.82) 40%, rgba(0, 15, 70, 0.25) 100%);
+  background: linear-gradient(90deg, rgba(0, 51, 102, 0.94) 0%, rgba(0, 51, 102, 0.82) 40%, rgba(0, 51, 102, 0.25) 100%);
 }
 
 .hero-banner .hero-overlay .container { width: 100%; }
@@ -1049,10 +1049,10 @@ h4 {
 
 @media (max-width: 768px) {
   .hero-logo { height: 84px; }
-  .logo { height: 38px; }
+  .logo { height: 56px; }
   .footer-bottom { flex-direction: column; }
 }
 
 @media (max-width: 768px) {
-  .hero-banner .hero-overlay { background: rgba(0, 15, 70, 0.86); }
+  .hero-banner .hero-overlay { background: rgba(0, 51, 102, 0.86); }
 }
