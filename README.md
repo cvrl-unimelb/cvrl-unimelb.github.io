@@ -26,5 +26,3 @@ images/people/       profile photos
 gem install jekyll -v 3.10.0 kramdown-parser-gfm webrick
 jekyll serve        # then open http://localhost:4000
 ```
-
-Website created by Basim Azam.
