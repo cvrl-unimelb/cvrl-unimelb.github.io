@@ -33,12 +33,13 @@ faculty:
     title: "Research Fellow"
     photo: "basim-azam.jpg"
     bio: >-
-      Dr Azam works on computer vision, machine learning and explainable AI. Previously a Research
-      Fellow at Griffith University, he investigated the explainability of AI algorithms. He completed
-      his PhD at Griffith University on deep learning-based context-adaptive architectures for image
-      parsing, supported by an Australian Research Council Discovery Project scholarship. His research
-      covers object detection, image segmentation, remote sensing and medical imaging.
-    interests: ["Computer Vision", "Explainable AI", "Responsible Generative AI", "Remote Sensing", "Medical Image Analysis", "Adversarial Learning"]
+      Dr Azam works on trustworthy generative AI and multimodal learning. His recent research
+      develops safe, interpretable and better-aligned text-to-image generation,
+      exposes hallucination in multimodal LLMs, addresses spurious correlations with
+      diffusion models, and latent world models and the robustness of vision-language-action models. Earlier work spans explainable AI, medical
+      imaging and remote sensing. He received his PhD in computer vision from Griffith University,
+      where he was later a Research Fellow working on the explainability of AI.
+    interests: ["Text-to-Image Generation", "Vision-Language Models", "Responsible Generative AI", "World Models", "Robustness", "Explainable AI"]
     honors: ""
     service: ""
     email: "basim.azam@unimelb.edu.au"
