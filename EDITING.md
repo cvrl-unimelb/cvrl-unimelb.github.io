@@ -110,4 +110,3 @@ The address comes from the repository name `cvrl-unimelb.github.io` under the `c
 To use a university domain later (e.g. `cvrl.cis.unimelb.edu.au`), ask UoM IT for a CNAME record pointing to `cvrl-unimelb.github.io`. Then add the domain under the repository's **Settings → Pages → Custom domain** and update `url:` in `_config.yml`.
 
 ---
-Website created by Basim Azam.
