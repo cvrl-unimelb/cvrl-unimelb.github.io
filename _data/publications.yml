@@ -1,0 +1,282 @@
+# =====================================================================
+#  PUBLICATIONS: shown on the Publications page, grouped by year
+#  (newest year first). Order within a year = order in this file.
+#
+#  To add a paper: copy this block to the TOP of the list and fill it in.
+#
+#  - title: "Paper title"
+#    authors: "A. Author, B. Azam, N. Akhtar"
+#    venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+#    badge: "CVPR"          # short label shown next to the title
+#    type: conference       # conference | journal | preprint
+#    year: 2027
+#    paper: "https://doi.org/..."   # link to paper (DOI, CVF, arXiv); "" if none
+#    code: ""                        # GitHub link; "" if none
+#    project: ""                     # project page; "" if none
+#
+#  Lab members' names are made bold automatically (list in _config.yml).
+#  Please copy titles, authors and venues from the publisher's page/DOI.
+# =====================================================================
+
+# ---------------- 2026 ----------------
+- title: "Latent Video Prediction for World Modeling: An Evaluation Uncovering Intriguing Favorable Evidence"
+  authors: "A. Alrasheed, A. Yazdan Parast, B. Azam, J. Bailey, N. Akhtar"
+  venue: "Advances in Neural Information Processing Systems (NeurIPS)"
+  badge: "NeurIPS"
+  type: conference
+  year: 2026
+  paper: "https://arxiv.org/abs/2605.15618"
+  code: ""
+  project: ""
+
+- title: "Intermediate Text Representation Guided Text-to-Image Generation for Enhancing One-and-Only Alignment"
+  authors: "S. Won, A. Yazdan Parast, B. Azam, J. Honorio, N. Akhtar"
+  venue: "European Conference on Computer Vision (ECCV)"
+  badge: "ECCV"
+  type: conference
+  year: 2026
+  paper: "https://doi.org/10.1007/978-3-032-37189-8_31"
+  code: ""
+  project: ""
+
+- title: "HSFM: Hard-Set-Guided Feature-Space Meta-learning for Robust Classification Under Spurious Correlations"
+  authors: "A. Yazdan Parast, K. Islam, S. Won, B. Azam, N. Akhtar"
+  venue: "European Conference on Computer Vision (ECCV)"
+  badge: "ECCV"
+  type: conference
+  year: 2026
+  paper: "https://doi.org/10.1007/978-3-032-37531-5_1"
+  code: ""
+  project: ""
+
+- title: "S²-FracMix: Label-Preserving Self-saliency Mixup Augmentation"
+  authors: "K. Islam, A. Mahmood, X. Jin, N. Akhtar"
+  venue: "European Conference on Computer Vision (ECCV)"
+  badge: "ECCV"
+  type: conference
+  year: 2026
+  paper: "https://doi.org/10.1007/978-3-032-37132-4_4"
+  code: ""
+  project: ""
+
+- title: "ReasonCLIP-58M: Visually Grounded Commonsense Reasoning Supervision for CLIP"
+  authors: "S. Zhang, M. Naseer, B. Xie, N. Suryanto, S. Qiu, J. Bentahar, N. Akhtar, M. Shah"
+  venue: "European Conference on Computer Vision (ECCV)"
+  badge: "ECCV"
+  type: conference
+  year: 2026
+  paper: "https://doi.org/10.1007/978-3-032-37013-6_12"
+  code: ""
+  project: ""
+
+- title: "GHOST: Hallucination-Inducing Image Generation for Multimodal LLMs"
+  authors: "A. Yazdan Parast, P. Hosseini, H. Asadollahzadeh, A. Soltani Moakhar, B. Azam, S. Feizi, N. Akhtar"
+  venue: "International Conference on Learning Representations (ICLR)"
+  badge: "ICLR"
+  type: conference
+  year: 2026
+  paper: "https://arxiv.org/abs/2509.25178"
+  code: ""
+  project: ""
+
+- title: "On the Limitations of Cross-Lingual Consistency in Multilingual Text-to-image Generation"
+  authors: "S. Zhang, Z. Yan, B. Xie, S. Qiu, M. Naseer, N. Akhtar, M. Shah"
+  venue: "ACM International Conference on Multimedia (ACM MM)"
+  badge: "ACM MM"
+  type: conference
+  year: 2026
+  paper: "https://doi.org/10.1145/3767308.3835058"
+  code: ""
+  project: ""
+
+- title: "ODC: Orthogonal Drift Correction for Improved Text-to-Image Semantic Alignment at Inference"
+  authors: "K. Kamali, B. Azam, T. D. Trinh, J. Honorio, N. Akhtar"
+  venue: "Transactions on Machine Learning Research (TMLR)"
+  badge: "TMLR"
+  type: journal
+  year: 2026
+  paper: "https://arxiv.org/abs/2611.00819"
+  code: ""
+  project: ""
+
+- title: "Efficient Point Cloud Processing With High-Dimensional Positional Encoding and Non-Local MLPs"
+  authors: "Y. Zou, H. Yu, Y. Wang, Z. Yang, X. Chen, K. Yang, N. Akhtar"
+  venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)"
+  badge: "TPAMI"
+  type: journal
+  year: 2026
+  paper: "https://doi.org/10.1109/TPAMI.2026.3665872"
+  code: ""
+  project: ""
+
+- title: "Monocular Multi-Object 3D Visual Language Tracking"
+  authors: "H. Wei, R. Wang, H. Hu, S. Sun, X. Song, M. Feng, K. Guo, Y. Huang, H. Cui, N. Akhtar"
+  venue: "IEEE Transactions on Image Processing (TIP)"
+  badge: "TIP"
+  type: journal
+  year: 2026
+  paper: "https://doi.org/10.1109/TIP.2026.3661407"
+  code: ""
+  project: ""
+
+- title: "GenMix: Effective Data Augmentation with Generative Diffusion Model Image Editing"
+  authors: "K. Islam, M. Z. Zaheer, A. Mahmood, K. Nandakumar, N. Akhtar"
+  venue: "Expert Systems with Applications"
+  badge: "Journal"
+  type: journal
+  year: 2026
+  paper: "https://doi.org/10.1016/j.eswa.2026.132273"
+  code: ""
+  project: ""
+
+- title: "Large Language Models for Computer-Aided Design: A Survey"
+  authors: "L. Zhang, B. Le, N. Akhtar, S.-K. Lam, D. Ngo"
+  venue: "ACM Computing Surveys"
+  badge: "CSUR"
+  type: journal
+  year: 2026
+  paper: "https://doi.org/10.1145/3787499"
+  code: ""
+  project: ""
+
+# ---------------- 2025 ----------------
+- title: "Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control"
+  authors: "B. Azam, N. Akhtar"
+  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+  badge: "CVPR"
+  type: conference
+  year: 2025
+  paper: "https://doi.org/10.1109/CVPR52734.2025.00283"
+  code: ""
+  project: ""
+
+- title: "Mono3DVLT: Monocular-Video-Based 3D Visual Language Tracking"
+  authors: "H. Wei, Y. Yang, S. Sun, M. Feng, X. Song, Q. Lei, H. Hu, R. Wang, H. Song, N. Akhtar, A. Mian"
+  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+  badge: "CVPR"
+  type: conference
+  year: 2025
+  paper: "https://doi.org/10.1109/CVPR52734.2025.01296"
+  code: ""
+  project: ""
+
+- title: "Beyond Human Perception: Understanding Multi-Object World from Monocular View"
+  authors: "K. Guo, Y. Huang, S. Sun, X. Song, M. Feng, Z. Liu, H. Song, T. Wang, J. Li, N. Akhtar, A. Mian"
+  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+  badge: "CVPR"
+  type: conference
+  year: 2025
+  paper: "https://doi.org/10.1109/CVPR52734.2025.00355"
+  code: ""
+  project: ""
+
+- title: "DDB: Diffusion Driven Balancing to Address Spurious Correlations"
+  authors: "A. Yazdan Parast, B. Azam, N. Akhtar"
+  venue: "IEEE/CVF International Conference on Computer Vision (ICCV)"
+  badge: "ICCV"
+  type: conference
+  year: 2025
+  paper: "https://doi.org/10.1109/ICCV51701.2025.01628"
+  code: ""
+  project: ""
+
+- title: "CymbaDiff: Structured Spatial Diffusion for Sketch-based 3D Semantic Urban Scene Generation"
+  authors: "L. Liang, B. Miao, X. Wang, N. Akhtar, J. Vice, A. Mian"
+  venue: "Advances in Neural Information Processing Systems (NeurIPS)"
+  badge: "NeurIPS"
+  type: conference
+  year: 2025
+  paper: "https://doi.org/10.52202/085713-2710"
+  code: ""
+  project: ""
+
+- title: "Skip Mamba Diffusion for Monocular 3D Semantic Scene Completion"
+  authors: "L. Liang, N. Akhtar, J. Vice, X. Kong, A. Mian"
+  venue: "AAAI Conference on Artificial Intelligence"
+  badge: "AAAI"
+  type: conference
+  year: 2025
+  paper: "https://doi.org/10.1609/aaai.v39i5.32547"
+  code: ""
+  project: ""
+
+- title: "Quantifying Bias in Text-to-Image Generative Models"
+  authors: "J. Vice, N. Akhtar, R. Hartley, A. Mian"
+  venue: "IEEE Transactions on Dependable and Secure Computing (TDSC)"
+  badge: "TDSC"
+  type: journal
+  year: 2025
+  paper: "https://doi.org/10.1109/TDSC.2025.3572115"
+  code: ""
+  project: ""
+
+- title: "RSVMamba for Tree Species Classification Using UAV RGB Remote Sensing Images"
+  authors: "X. Zhang, J. Gu, B. Azam, W. Zhang, M. Lin, C. Li, W. Jing, N. Akhtar"
+  venue: "IEEE Transactions on Geoscience and Remote Sensing (TGRS)"
+  badge: "TGRS"
+  type: journal
+  year: 2025
+  paper: "https://doi.org/10.1109/TGRS.2025.3533019"
+  code: ""
+  project: ""
+
+- title: "A Comprehensive Overview of Large Language Models"
+  authors: "H. Naveed, A. U. Khan, S. Qiu, M. Saqib, S. Anwar, M. Usman, N. Akhtar, N. Barnes, A. Mian"
+  venue: "ACM Transactions on Intelligent Systems and Technology (TIST)"
+  badge: "TIST"
+  type: journal
+  year: 2025
+  paper: "https://doi.org/10.1145/3744746"
+  code: ""
+  project: ""
+
+# ---------------- 2024 ----------------
+- title: "Regulating Model Reliance on Non-robust Features by Smoothing Input Marginal Density"
+  authors: "P. Yang, N. Akhtar, M. Shah, A. Mian"
+  venue: "European Conference on Computer Vision (ECCV)"
+  badge: "ECCV"
+  type: conference
+  year: 2024
+  paper: "https://doi.org/10.1007/978-3-031-72998-0_19"
+  code: "https://github.com/ypeiyu/input_density_reg"
+  project: ""
+
+- title: "Improved MLP Point Cloud Processing with High-Dimensional Positional Encoding"
+  authors: "Y. Zou, H. Yu, Z. Yang, Z. Li, N. Akhtar"
+  venue: "AAAI Conference on Artificial Intelligence"
+  badge: "AAAI"
+  type: conference
+  year: 2024
+  paper: "https://doi.org/10.1609/aaai.v38i7.28625"
+  code: ""
+  project: ""
+
+- title: "BAGM: A Backdoor Attack for Manipulating Text-to-Image Generative Models"
+  authors: "J. Vice, N. Akhtar, R. Hartley, A. Mian"
+  venue: "IEEE Transactions on Information Forensics and Security (TIFS)"
+  badge: "TIFS"
+  type: journal
+  year: 2024
+  paper: "https://doi.org/10.1109/TIFS.2024.3386058"
+  code: ""
+  project: ""
+
+- title: "SCTransNet: Spatial-Channel Cross Transformer Network for Infrared Small Target Detection"
+  authors: "S. Yuan, H. Qin, X. Yan, N. Akhtar, A. Mian"
+  venue: "IEEE Transactions on Geoscience and Remote Sensing (TGRS)"
+  badge: "TGRS"
+  type: journal
+  year: 2024
+  paper: "https://doi.org/10.1109/TGRS.2024.3383649"
+  code: ""
+  project: ""
+
+- title: "Voxel- and Bird's-Eye-View-Based Semantic Scene Completion for LiDAR Point Clouds"
+  authors: "L. Liang, N. Akhtar, J. Vice, A. Mian"
+  venue: "Remote Sensing"
+  badge: "Journal"
+  type: journal
+  year: 2024
+  paper: "https://doi.org/10.3390/rs16132266"
+  code: ""
+  project: ""

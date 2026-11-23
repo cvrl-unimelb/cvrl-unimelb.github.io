@@ -1,21 +1,30 @@
-# Computer Vision Group - University of Melbourne
+# CVRL website
 
-Academic website for the Computer Vision Group at The University of Melbourne, led by Dr. Naveed Akhtar.
+Website of **CVRL, the Computer Vision Research Lab**, The University of Melbourne (Director: Dr Naveed Akhtar).
 
-**Live Site**: [https://basim-azam.github.io/cv-group-website/](https://basim-azam.github.io/cv-group-website/)
+**Live:** https://cvrl-unimelb.github.io
 
-## Local Development
+**To update content (people, papers, news, positions), see [EDITING.md](EDITING.md).** Everything can be edited in the browser on GitHub, and changes go live automatically within about 1–2 minutes.
 
-Open any HTML file in a browser, or run a local server:
+## Structure
 
-```bash
-python -m http.server 8000
+```
+_config.yml          site settings: name, web address, lab contact details, menu
+_data/               CONTENT: people.yml, publications.yml, news.yml, positions.yml
+_layouts/default.html  page skeleton (shared by all pages)
+_includes/           header.html, footer.html (shared by all pages)
+index.html, people.html, research.html, publications.html, news.html, join.html, contact.html
+css/style.css        styles
+images/brand/        CVRL logos and icons
+images/people/       profile photos
+.github/workflows/   automatic build and deploy (Jekyll → GitHub Pages)
 ```
 
-## Deployment
+## Local preview (optional)
 
-Push to `main` branch and the site automatically deploys via GitHub Actions.
+```bash
+gem install jekyll -v 3.10.0 kramdown-parser-gfm webrick
+jekyll serve        # then open http://localhost:4000
+```
 
-## Contact
-
-For research inquiries, contact Dr. Naveed Akhtar at naveed.akhtar1@unimelb.edu.au
+Website created by Basim Azam.

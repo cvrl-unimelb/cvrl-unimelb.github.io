@@ -1,0 +1,70 @@
+# =====================================================================
+#  CVRL website settings
+#  Change these values and the whole site updates (header, footer,
+#  contact details). See EDITING.md for a step-by-step guide.
+# =====================================================================
+
+title: "CVRL"
+long_title: "Computer Vision Research Lab"
+university: "The University of Melbourne"
+description: >-
+  CVRL, the Computer Vision Research Lab at The University of Melbourne, led by
+  Dr Naveed Akhtar. Research in trustworthy, robust and responsible computer vision.
+
+# Web address. If the repository is renamed or moved, update these two lines.
+#   Site at https://cvrl-unimelb.github.io            -> baseurl: ""
+#   Site at https://<someone>.github.io/<repo-name>   -> baseurl: "/<repo-name>"
+url: "https://cvrl-unimelb.github.io"
+baseurl: ""
+
+# Lab contact details (used in the footer and on the Contact page)
+lab:
+  director: "Dr Naveed Akhtar"
+  email: "naveed.akhtar1@unimelb.edu.au"
+  scholar: "https://scholar.google.com/citations?user=Xqmlj18AAAAJ"
+  school: "School of Computing and Information Systems"
+  school_url: "https://cis.unimelb.edu.au"
+  street: "Melbourne Connect, 700 Swanston Street"
+  city: "Carlton VIC 3053, Australia"
+
+# Names written in bold in the publication list (add new lab members here)
+highlight_authors:
+  - "N. Akhtar"
+  - "B. Azam"
+  - "A. Alrasheed"
+  - "K. Islam"
+  - "S. Won"
+  - "T. D. Trinh"
+  - "H. Kanagalingam"
+  - "M. I. Ansari"
+  - "K. Kamali"
+  - "A. Yazdan Parast"
+
+# Menu at the top of every page
+nav:
+  - { title: "Home", url: "/" }
+  - { title: "People", url: "/people.html" }
+  - { title: "Research", url: "/research.html" }
+  - { title: "Publications", url: "/publications.html" }
+  - { title: "News", url: "/news.html" }
+  - { title: "Join Us", url: "/join.html" }
+  - { title: "Contact", url: "/contact.html" }
+
+# Number of news items shown on the home page
+home_news_count: 5
+
+# Footer credit
+credit:
+  name: "Basim Azam"
+  url: "https://findanexpert.unimelb.edu.au/profile/1065421-basim-azam"
+
+# ---- Technical settings: no need to edit below this line ----
+markdown: kramdown
+timezone: Australia/Melbourne
+exclude:
+  - README.md
+  - EDITING.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor

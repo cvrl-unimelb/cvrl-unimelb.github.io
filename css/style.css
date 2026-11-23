@@ -1,18 +1,18 @@
 /* ============================================
-   Computer Vision Group - University of Melbourne
-   VGG-Style Minimal Academic Theme
+   CVRL - Computer Vision Research Lab, The University of Melbourne
+   Minimal academic theme
    ============================================ */
 
 /* Color Variables */
 :root {
-  --unimelb-blue: #003366;
-  --unimelb-blue-light: #0055A4;
-  --unimelb-blue-dark: #001A33;
+  --unimelb-blue: #000F46;       /* CVRL / UoM navy (matches the logo) */
+  --unimelb-blue-light: #1F4E9C;
+  --unimelb-blue-dark: #000A30;
   --text-dark: #333333;
   --text-muted: #666666;
   --bg-light: #f8f9fa;
   --border-color: #dee2e6;
-  --link-color: #0055A4;
+  --link-color: #1F4E9C;
 }
 
 /* Base Styles */
@@ -61,7 +61,7 @@ a:hover {
 }
 
 .logo {
-  height: 50px;
+  height: 46px;
   width: auto;
 }
 
@@ -134,7 +134,7 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(transparent, rgba(0, 51, 102, 0.9));
+  background: linear-gradient(transparent, rgba(0, 15, 70, 0.92));
   padding: 60px 0 30px;
 }
 
@@ -176,7 +176,7 @@ a:hover {
   left: 0;
   right: 0;
   top: 0;
-  background: linear-gradient(transparent 30%, rgba(0, 51, 102, 0.85));
+  background: linear-gradient(transparent 30%, rgba(0, 15, 70, 0.85));
   display: flex;
   align-items: flex-end;
   padding-bottom: 20px;
@@ -220,7 +220,7 @@ a:hover {
   color: #fff;
   text-decoration: none;
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 15, 70, 0.2);
 }
 
 .nav-card i {
@@ -989,4 +989,70 @@ h4 {
   a {
     color: #000;
   }
+}
+
+/* ============================================
+   CVRL additions
+   ============================================ */
+.site-title .title { font-size: 1.15rem; }
+.main-nav a { padding: 8px 11px; }
+@media (min-width: 1200px) { .header-content { flex-wrap: nowrap; } }
+
+.hero-banner .hero-overlay {
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background: linear-gradient(90deg, rgba(0, 15, 70, 0.94) 0%, rgba(0, 15, 70, 0.82) 40%, rgba(0, 15, 70, 0.25) 100%);
+}
+
+.hero-banner .hero-overlay .container { width: 100%; }
+
+.hero-logo {
+  display: block;
+  height: 120px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+}
+
+.update-badge.event,
+.news-badge.event {
+  background: #e8eaf6;
+  color: #283593;
+}
+
+.news-content p { margin: 4px 0 0; }
+
+.student-supervisors {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 6px 0 0;
+}
+
+.alumni-list { padding-left: 1.1rem; }
+.alumni-list li { margin-bottom: 6px; }
+
+@media (max-width: 768px) {
+  .hero-logo { height: 84px; }
+  .logo { height: 38px; }
+  .footer-bottom { flex-direction: column; }
+}
+
+@media (max-width: 768px) {
+  .hero-banner .hero-overlay { background: rgba(0, 15, 70, 0.86); }
 }

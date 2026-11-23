@@ -1,195 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>News | Computer Vision Group | The University of Melbourne</title>
-  <meta name="description" content="Latest news and updates from the Computer Vision Group at The University of Melbourne.">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <div class="header-content">
-        <a href="index.html" class="logo-link">
-          <img src="images/unimelb-logo.png" alt="University of Melbourne" class="logo">
-          <div class="site-title">
-            <span class="title">Computer Vision Group</span>
-            <span class="subtitle">The University of Melbourne</span>
-          </div>
-        </a>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="people.html">People</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="news.html" class="active">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+---
+layout: default
+title: News
+banner: true
+description: News from CVRL, the Computer Vision Research Lab at The University of Melbourne.
+---
+<!-- News page. All content comes from _data/news.yml -->
+{%- assign icons = "paper:fa-file-alt|team:fa-users|award:fa-trophy|event:fa-bullhorn|service:fa-hands-helping" | split: "|" %}
+<div class="container">
+  {%- assign sorted = site.data.news | sort: "date" | reverse %}
+  {%- assign years = sorted | group_by_exp: "item", "item.date | date: '%Y'" %}
+  {%- for y in years %}
+  <section class="news-year-section">
+    <h2 class="news-year">{{ y.name }}</h2>
+    <div class="news-items">
+      {%- for item in y.items %}
+      {%- assign icon = "fa-circle" %}
+      {%- for pair in icons %}{% assign kv = pair | split: ":" %}{% if kv[0] == item.type %}{% assign icon = kv[1] %}{% endif %}{% endfor %}
+      <div class="news-item">
+        <div class="news-meta">
+          <span class="news-date">{{ item.date | date: "%b %Y" }}</span>
+          <span class="news-badge {{ item.type }}"><i class="fas {{ icon }}"></i> {{ item.type | capitalize }}</span>
+        </div>
+        <div class="news-content">
+          <strong>{{ item.title }}</strong>
+          {{ item.text | markdownify }}
+        </div>
       </div>
-    </div>
-  </header>
-
-  <!-- Page Header Banner -->
-  <section class="page-header-banner">
-    <img src="images/page-header.jpg" alt="University of Melbourne">
-    <div class="header-overlay">
-      <div class="container">
-        <h1>News</h1>
-      </div>
+      {%- endfor %}
     </div>
   </section>
-
-  <!-- Main Content -->
-  <main class="main-content">
-    <div class="container">
-
-      <!-- 2025 -->
-      <section class="news-year-section">
-        <h2 class="news-year">2025</h2>
-        <div class="news-items">
-          <div class="news-item">
-            <div class="news-meta">
-              <span class="news-date">Jan 2025</span>
-              <span class="news-badge paper"><i class="fas fa-file-alt"></i> Paper</span>
-            </div>
-            <div class="news-content">
-              <strong>CVPR 2025 Paper Accepted</strong>
-              <p>Our paper on plug-and-play interpretable responsible text-to-image generation has been accepted at CVPR 2025.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 2024 -->
-      <section class="news-year-section">
-        <h2 class="news-year">2024</h2>
-        <div class="news-items">
-          <div class="news-item">
-            <div class="news-meta">
-              <span class="news-date">Sep 2024</span>
-              <span class="news-badge paper"><i class="fas fa-file-alt"></i> Paper</span>
-            </div>
-            <div class="news-content">
-              <strong>Two Papers at ECCV 2024</strong>
-              <p>Papers on regulating model reliance on non-robust features and adversarial robustness in vision transformers accepted.</p>
-            </div>
-          </div>
-          <div class="news-item">
-            <div class="news-meta">
-              <span class="news-date">Jul 2024</span>
-              <span class="news-badge team"><i class="fas fa-users"></i> Team</span>
-            </div>
-            <div class="news-content">
-              <strong>New PhD Students Join the Group</strong>
-              <p>Welcome to Ali Alrasheed, Khawar Islam, Heethanjan Kanagalingam, Mohammed Ishaq Ansari, and Aryan Yazdan Parast.</p>
-            </div>
-          </div>
-          <div class="news-item">
-            <div class="news-meta">
-              <span class="news-date">Mar 2024</span>
-              <span class="news-badge service"><i class="fas fa-hands-helping"></i> Service</span>
-            </div>
-            <div class="news-content">
-              <strong>CVPR 2024 Area Chair</strong>
-              <p>Dr. Akhtar serving as Area Chair for CVPR 2024.</p>
-            </div>
-          </div>
-          <div class="news-item">
-            <div class="news-meta">
-              <span class="news-date">Jan 2024</span>
-              <span class="news-badge paper"><i class="fas fa-file-alt"></i> Paper</span>
-            </div>
-            <div class="news-content">
-              <strong>AAAI 2024 Paper Accepted</strong>
-              <p>"Improved MLP Point Cloud Processing with High-Dimensional Positional Encoding" accepted at AAAI 2024.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 2023 -->
-      <section class="news-year-section">
-        <h2 class="news-year">2023</h2>
-        <div class="news-items">
-          <div class="news-item">
-            <div class="news-meta">
-              <span class="news-date">2023</span>
-              <span class="news-badge award"><i class="fas fa-trophy"></i> Award</span>
-            </div>
-            <div class="news-content">
-              <strong>Google Research Scholar Award</strong>
-              <p>Dr. Akhtar received the Google Research Scholar Program Award for research on adversarial robustness.</p>
-            </div>
-          </div>
-          <div class="news-item">
-            <div class="news-meta">
-              <span class="news-date">2023</span>
-              <span class="news-badge award"><i class="fas fa-award"></i> Award</span>
-            </div>
-            <div class="news-content">
-              <strong>ACM Distinguished Speaker</strong>
-              <p>Dr. Akhtar recognized as ACM Distinguished Speaker.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 2021 -->
-      <section class="news-year-section">
-        <h2 class="news-year">2021</h2>
-        <div class="news-items">
-          <div class="news-item">
-            <div class="news-meta">
-              <span class="news-date">2021</span>
-              <span class="news-badge award"><i class="fas fa-medal"></i> Award</span>
-            </div>
-            <div class="news-content">
-              <strong>WA Early Career Scientist Finalist</strong>
-              <p>Dr. Akhtar was a finalist for Western Australia's Early Career Scientist of the Year.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <p class="affiliation">
-            <strong>Computer Vision Group</strong><br>
-            School of Computing and Information Systems<br>
-            The University of Melbourne<br>
-            Parkville VIC 3010, Australia
-          </p>
-        </div>
-        <div class="col-md-6 text-md-end">
-          <p class="contact-info">
-            <a href="mailto:naveed.akhtar1@unimelb.edu.au"><i class="fas fa-envelope"></i> naveed.akhtar1@unimelb.edu.au</a><br>
-            <a href="https://scholar.google.com/citations?user=Xqmlj18AAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-          </p>
-        </div>
-      </div>
-      <hr>
-      <p class="copyright">&copy; 2025 Computer Vision Group, The University of Melbourne</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+  {%- endfor %}
+</div>

@@ -1,0 +1,26 @@
+---
+layout: default
+title: Join Us
+banner: true
+description: PhD, postdoctoral and visiting opportunities at CVRL, The University of Melbourne.
+---
+<!-- Join Us page. Positions come from _data/positions.yml -->
+<div class="container">
+  <p class="lead">
+    We are always looking for motivated students and researchers to join CVRL.
+    If you are interested in computer vision, machine learning or related areas, please consider
+    the opportunities below.
+  </p>
+  <div class="row">
+    {%- for pos in site.data.positions %}
+    {%- if pos.open %}
+    <div class="col-lg-6">
+      <section class="contact-section join-section">
+        <h3>{{ pos.title }}</h3>
+        {{ pos.text | markdownify }}
+      </section>
+    </div>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+</div>

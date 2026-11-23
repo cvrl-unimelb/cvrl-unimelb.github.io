@@ -1,0 +1,88 @@
+# =====================================================================
+#  NEWS: the newest items appear on the home page, everything on the
+#  News page (grouped by year, newest first, in date order).
+#
+#  To add news: copy this block to the TOP of the list and fill it in.
+#
+#  - date: 2027-03-01          # YYYY-MM-DD (only month and year are shown)
+#    type: paper               # paper | team | award | event | service
+#    title: "Short headline"
+#    text: "One or two sentences. You can use **bold** and [links](https://...)."
+#
+#  Items are sorted by date automatically, so order here does not matter.
+# =====================================================================
+
+- date: 2026-11-24
+  type: event
+  title: "We are now CVRL"
+  text: "Our group is now the **Computer Vision Research Lab (CVRL)** at The University of Melbourne, with a new logo and website."
+
+- date: 2026-10-01
+  type: paper
+  title: "NeurIPS 2026 paper accepted"
+  text: "\"Latent Video Prediction for World Modeling: An Evaluation Uncovering Intriguing Favorable Evidence\" accepted at **NeurIPS 2026**."
+
+- date: 2026-07-01
+  type: paper
+  title: "Four papers at ECCV 2026"
+  text: "Papers on text-to-image alignment, robustness to spurious correlations, mixup augmentation and commonsense reasoning for CLIP accepted at **ECCV 2026**."
+
+- date: 2026-01-31
+  type: paper
+  title: "ICLR 2026 paper accepted"
+  text: "\"GHOST: Hallucination-Inducing Image Generation for Multimodal LLMs\" accepted at **ICLR 2026**."
+
+- date: 2026-01-13
+  type: team
+  title: "Welcome Ali Alrasheed"
+  text: "Ali joins as a PhD researcher working on latent world models for sequential decision-making."
+
+- date: 2025-09-15
+  type: team
+  title: "Welcome Khawar Islam and Mohammed Ishaq Ansari"
+  text: "Khawar (multi-modal foundation models) and Ishaq (responsible use of generative AI) join as PhD researchers."
+
+- date: 2025-07-01
+  type: team
+  title: "Welcome Heethanjan Kanagalingam"
+  text: "Heethanjan joins as a PhD researcher working on effective adaptation of foundation models."
+
+- date: 2025-06-26
+  type: paper
+  title: "ICCV 2025 paper accepted"
+  text: "\"DDB: Diffusion Driven Balancing to Address Spurious Correlations\" accepted at **ICCV 2025**."
+
+- date: 2025-04-30
+  type: team
+  title: "Welcome Soyoun Won"
+  text: "Soyoun joins as a PhD researcher working on the interpretability of neural networks."
+
+- date: 2025-03-12
+  type: team
+  title: "Welcome Kasra Kamali"
+  text: "Kasra joins as a PhD researcher working on responsible generative visual modelling."
+
+- date: 2025-02-26
+  type: paper
+  title: "CVPR 2025 paper accepted"
+  text: "\"Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control\" accepted at **CVPR 2025**."
+
+- date: 2025-02-10
+  type: team
+  title: "Welcome Tony Trinh"
+  text: "Tony joins as a PhD researcher working on responsible generative AI in computer vision."
+
+- date: 2024-10-14
+  type: team
+  title: "Welcome Aryan Yazdan Parast"
+  text: "Aryan joins as a PhD researcher working on the robustness of machine perception."
+
+- date: 2024-07-01
+  type: paper
+  title: "ECCV 2024 paper accepted"
+  text: "\"Regulating Model Reliance on Non-robust Features by Smoothing Input Marginal Density\" accepted at **ECCV 2024**."
+
+- date: 2021-08-01
+  type: award
+  title: "WA Early Career Scientist of the Year finalist"
+  text: "Dr Akhtar was a finalist for Western Australia's Early Career Scientist of the Year 2021."

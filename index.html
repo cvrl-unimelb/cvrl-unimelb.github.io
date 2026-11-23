@@ -1,160 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Computer Vision Group | The University of Melbourne</title>
-  <meta name="description" content="Computer Vision research group at The University of Melbourne, led by Dr. Naveed Akhtar. Research in adversarial ML, explainable AI, and deep learning for vision.">
+---
+layout: default
+---
+<!-- Home page. News items come from _data/news.yml -->
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <!-- Header -->
-  <header class="site-header">
+<section class="hero-banner">
+  <img src="{{ '/images/campus-hero.jpg' | relative_url }}" alt="The University of Melbourne campus" class="hero-image">
+  <div class="hero-overlay">
     <div class="container">
-      <div class="header-content">
-        <a href="index.html" class="logo-link">
-          <img src="images/unimelb-logo.png" alt="University of Melbourne" class="logo">
-          <div class="site-title">
-            <span class="title">Computer Vision Group</span>
-            <span class="subtitle">The University of Melbourne</span>
-          </div>
-        </a>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="people.html">People</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+      <img src="{{ '/images/brand/cvrl-logo-white.png' | relative_url }}" alt="CVRL: Computer Vision Research Lab, The University of Melbourne" class="hero-logo">
+    </div>
+  </div>
+</section>
+
+<div class="container">
+
+  <section class="about-section">
+    <p class="lead">
+      CVRL, the Computer Vision Research Lab at The University of Melbourne, conducts research
+      in computer vision, machine learning and artificial intelligence.
+    </p>
+    <p>
+      Led by <a href="{{ '/people.html' | relative_url }}">Dr Naveed Akhtar</a>, an ARC DECRA Fellow, the lab
+      develops interpretable, robust and responsible AI systems. We investigate adversarial machine
+      learning, explainable AI, responsible generative AI, multi-modal and foundation models, and
+      3D point cloud analysis.
+    </p>
+  </section>
+
+  <section class="nav-cards">
+    <div class="row">
+      <div class="col-md-3 col-6">
+        <a href="{{ '/people.html' | relative_url }}" class="nav-card"><i class="fas fa-users"></i><span>People</span></a>
+      </div>
+      <div class="col-md-3 col-6">
+        <a href="{{ '/publications.html' | relative_url }}" class="nav-card"><i class="fas fa-book"></i><span>Publications</span></a>
+      </div>
+      <div class="col-md-3 col-6">
+        <a href="{{ '/research.html' | relative_url }}" class="nav-card"><i class="fas fa-flask"></i><span>Research</span></a>
+      </div>
+      <div class="col-md-3 col-6">
+        <a href="{{ '/join.html' | relative_url }}" class="nav-card"><i class="fas fa-user-plus"></i><span>Join Us</span></a>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- Main Content -->
-  <main class="main-content">
-
-    <!-- Hero Section with Campus Image -->
-    <section class="hero-banner">
-      <img src="images/campus-hero.jpg" alt="University of Melbourne Campus" class="hero-image">
-      <div class="hero-overlay">
-        <div class="container">
-          <h1>Welcome</h1>
-          <p class="hero-tagline">Advancing Computer Vision Research</p>
-        </div>
+  <section class="updates-section">
+    <h2>Latest</h2>
+    <div class="updates-grid">
+      {%- assign news = site.data.news | sort: "date" | reverse %}
+      {%- for item in news limit: site.home_news_count %}
+      <div class="update-item">
+        <span class="update-date">{{ item.date | date: "%b %Y" }}</span>
+        <span class="update-badge {{ item.type }}">{{ item.type | capitalize }}</span>
+        <span class="update-text"><strong>{{ item.title }}.</strong> {{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
       </div>
-    </section>
-
-    <div class="container">
-
-      <!-- About Section -->
-      <section class="about-section">
-        <p class="lead">
-          The Computer Vision Group at The University of Melbourne conducts research
-          in computer vision, machine learning, and artificial intelligence.
-        </p>
-        <p>
-          Led by <a href="people.html">Dr. Naveed Akhtar</a>, an ARC DECRA Fellow, our group
-          focuses on developing interpretable and robust AI systems. We investigate adversarial
-          machine learning, explainable AI, 3D point cloud analysis, and multi-modal learning.
-        </p>
-      </section>
-
-      <!-- Navigation Cards -->
-      <section class="nav-cards">
-        <div class="row">
-          <div class="col-md-3 col-6">
-            <a href="people.html" class="nav-card">
-              <i class="fas fa-users"></i>
-              <span>People</span>
-            </a>
-          </div>
-          <div class="col-md-3 col-6">
-            <a href="publications.html" class="nav-card">
-              <i class="fas fa-book"></i>
-              <span>Publications</span>
-            </a>
-          </div>
-          <div class="col-md-3 col-6">
-            <a href="news.html" class="nav-card">
-              <i class="fas fa-newspaper"></i>
-              <span>News</span>
-            </a>
-          </div>
-          <div class="col-md-3 col-6">
-            <a href="contact.html#join" class="nav-card">
-              <i class="fas fa-user-plus"></i>
-              <span>Join Us</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Latest Updates -->
-      <section class="updates-section">
-        <h2>Latest</h2>
-        <div class="updates-grid">
-          <div class="update-item">
-            <span class="update-date">Jan 2025</span>
-            <span class="update-badge paper">Paper</span>
-            <span class="update-text">Paper accepted at <strong>CVPR 2025</strong> on responsible generative AI</span>
-          </div>
-          <div class="update-item">
-            <span class="update-date">Sep 2024</span>
-            <span class="update-badge paper">Paper</span>
-            <span class="update-text">Two papers accepted at <strong>ECCV 2024</strong></span>
-          </div>
-          <div class="update-item">
-            <span class="update-date">Jul 2024</span>
-            <span class="update-badge team">Team</span>
-            <span class="update-text">New PhD students join the group</span>
-          </div>
-          <div class="update-item">
-            <span class="update-date">Jan 2024</span>
-            <span class="update-badge paper">Paper</span>
-            <span class="update-text">Paper accepted at <strong>AAAI 2024</strong></span>
-          </div>
-        </div>
-        <p class="updates-more"><a href="news.html">All news &rarr;</a></p>
-      </section>
-
+      {%- endfor %}
     </div>
-  </main>
+    <p class="updates-more"><a href="{{ '/news.html' | relative_url }}">All news &rarr;</a></p>
+  </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <p class="affiliation">
-            <strong>Computer Vision Group</strong><br>
-            School of Computing and Information Systems<br>
-            The University of Melbourne<br>
-            Parkville VIC 3010, Australia
-          </p>
-        </div>
-        <div class="col-md-6 text-md-end">
-          <p class="contact-info">
-            <a href="mailto:naveed.akhtar1@unimelb.edu.au"><i class="fas fa-envelope"></i> naveed.akhtar1@unimelb.edu.au</a><br>
-            <a href="https://scholar.google.com/citations?user=Xqmlj18AAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-          </p>
-        </div>
-      </div>
-      <hr>
-      <p class="copyright">&copy; 2025 Computer Vision Group, The University of Melbourne</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+</div>

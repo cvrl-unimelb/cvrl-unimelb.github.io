@@ -1,0 +1,30 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-4">
+        <a href="{{ '/' | relative_url }}"><img src="{{ '/images/brand/cvrl-logo-white.png' | relative_url }}" alt="CVRL: Computer Vision Research Lab, The University of Melbourne" class="footer-logo"></a>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <p class="affiliation">
+          <strong>{{ site.title }}: {{ site.long_title }}</strong><br>
+          <a href="{{ site.lab.school_url }}" target="_blank" rel="noopener">{{ site.lab.school }}</a><br>
+          {{ site.university }}<br>
+          {{ site.lab.street }}<br>
+          {{ site.lab.city }}
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-6 text-md-end">
+        <p class="contact-info">
+          <a href="mailto:{{ site.lab.email }}"><i class="fas fa-envelope"></i>{{ site.lab.email }}</a><br>
+          <a href="{{ site.lab.scholar }}" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i>Google Scholar</a><br>
+          <a href="{{ '/join.html' | relative_url }}"><i class="fas fa-user-plus"></i>Join us</a>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <p class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title }}, {{ site.university }}</p>
+      <p class="copyright credit">Website created by <a href="{{ site.credit.url }}" target="_blank" rel="noopener">{{ site.credit.name }}</a></p>
+    </div>
+  </div>
+</footer>

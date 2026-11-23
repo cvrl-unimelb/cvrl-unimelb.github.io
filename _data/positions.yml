@@ -1,0 +1,36 @@
+# =====================================================================
+#  OPEN POSITIONS: shown on the Join Us page.
+#  Set "open: false" to hide a position without deleting it.
+#  "text" can use **bold**, bullet lists ("- item") and [links](https://...).
+# =====================================================================
+
+- title: "PhD positions"
+  open: true
+  text: |
+    We welcome applications from motivated students interested in:
+
+    - Adversarial machine learning and model robustness
+    - Explainable and interpretable AI
+    - Responsible generative AI
+    - Multi-modal foundation models and world models
+    - 3D point cloud processing and understanding
+    - Medical image analysis
+
+    Applicants should have a strong background in computer science, mathematics or a related field,
+    experience with deep learning frameworks (e.g. PyTorch) and good Python skills. Publications in
+    top venues are a plus.
+
+    To apply, email your CV, transcripts and a brief research statement to
+    [naveed.akhtar1@unimelb.edu.au](mailto:naveed.akhtar1@unimelb.edu.au).
+
+- title: "Postdoctoral positions"
+  open: true
+  text: "Postdoctoral positions may be available depending on funding. Please get in touch with your CV and research interests."
+
+- title: "Visiting researchers"
+  open: true
+  text: "We welcome visiting students and researchers for collaborative projects. Please get in touch if you are interested in a research visit."
+
+- title: "Scholarships"
+  open: true
+  text: "Information about scholarships is available on the [University of Melbourne Graduate Research Scholarships](https://scholarships.unimelb.edu.au/awards/graduate-research-scholarships) page."
