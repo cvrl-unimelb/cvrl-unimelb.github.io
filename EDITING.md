@@ -54,7 +54,7 @@ Copy this block to the top of the list:
 
 ```yaml
 - title: "Paper title"
-  authors: "A. Student, B. Azam, N. Akhtar"
+  authors: "A. Student, C. Author, N. Akhtar"
   venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
   badge: "CVPR"
   type: conference     # conference | journal | preprint

@@ -53,10 +53,6 @@ nav:
 # Number of news items shown on the home page
 home_news_count: 5
 
-# Footer credit
-credit:
-  name: "Basim Azam"
-  url: "https://findanexpert.unimelb.edu.au/profile/1065421-basim-azam"
 
 # ---- Technical settings: no need to edit below this line ----
 markdown: kramdown
