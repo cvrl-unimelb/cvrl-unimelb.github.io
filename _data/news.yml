@@ -12,6 +12,11 @@
 #  Items are sorted by date automatically, so order here does not matter.
 # =====================================================================
 
+- date: 2026-11-25
+  type: award
+  title: "Rowden White Scholarship"
+  text: "Khawar Islam won the highly competitive Rowden White Scholarship. Second for CVRL. Congratulations Khawar!"
+  
 - date: 2026-11-24
   type: service
   title: "Lead AC for CVPR 2027"
@@ -41,6 +46,11 @@
   type: team
   title: "Welcome Ali Alrasheed"
   text: "Ali joins as a PhD researcher working on latent world models for sequential decision-making."
+
+- date: 2025-11-01
+  type: award
+  title: "Rowden White Scholarship"
+  text: "Aryan Yazdan Parast won the highly competitive Rowden White Scholarship. Congratulations Aryan!"
 
 - date: 2025-10-01
   type: award
@@ -91,6 +101,11 @@
   type: paper
   title: "ECCV 2024 paper accepted"
   text: "\"Regulating Model Reliance on Non-robust Features by Smoothing Input Marginal Density\" accepted at **ECCV 2024**"
+
+- date: 2023-11-25
+  type: award
+  title: "USERN Laureate in Formal Sciences"
+  text: "Naveed Akhtar chosen USERN Laureate in Formal Sciences. One emerging scientist per field is chosen a Laureate worldwide."
 
 - date: 2021-08-01
   type: award
