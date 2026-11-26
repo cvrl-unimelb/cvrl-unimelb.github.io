@@ -20,22 +20,32 @@
 - date: 2026-10-01
   type: paper
   title: "NeurIPS 2026 paper accepted"
-  text: "\"Latent Video Prediction for World Modeling: An Evaluation Uncovering Intriguing Favorable Evidence\" accepted at **NeurIPS 2026**."
+  text: "\"Latent Video Prediction for World Modeling: An Evaluation Uncovering Intriguing Favorable Evidence\" accepted at **NeurIPS 2026**"
 
 - date: 2026-07-01
   type: paper
   title: "Four papers at ECCV 2026"
-  text: "Papers on text-to-image alignment, robustness to spurious correlations, mixup augmentation and commonsense reasoning for CLIP accepted at **ECCV 2026**."
+  text: "Papers on text-to-image alignment, robustness to spurious correlations, mixup augmentation and commonsense reasoning for CLIP accepted at **ECCV 2026**"
+
+- date: 2026-05-21
+  type: event
+  title: "Prof. Mubarak Shah visited CVRL"
+  text: "UCF Trustee Chair Professor of Computer Science and Director CRCV and IAI at University of Central Florida (UCF) paid an engaging visit at CVRL."  
 
 - date: 2026-01-31
   type: paper
   title: "ICLR 2026 paper accepted"
-  text: "\"GHOST: Hallucination-Inducing Image Generation for Multimodal LLMs\" accepted at **ICLR 2026**."
+  text: "\"GHOST: Hallucination-Inducing Image Generation for Multimodal LLMs\" accepted at **ICLR 2026**"
 
 - date: 2026-01-13
   type: team
   title: "Welcome Ali Alrasheed"
   text: "Ali joins as a PhD researcher working on latent world models for sequential decision-making."
+
+- date: 2025-10-01
+  type: award
+  title: "Best Paper Award at ICCV Workshops"
+  text: "Joint work with Prof. Mubarak Shah (UCF), Prof. Richard Hartley (ANU) and Prof. Ajmal Mian (UWA) won Best Paper Award at ICCV workshop on Safe and Trustworthy Multimodal AI Systems."
 
 - date: 2025-09-15
   type: team
@@ -50,7 +60,7 @@
 - date: 2025-06-26
   type: paper
   title: "ICCV 2025 paper accepted"
-  text: "\"DDB: Diffusion Driven Balancing to Address Spurious Correlations\" accepted at **ICCV 2025**."
+  text: "\"DDB: Diffusion Driven Balancing to Address Spurious Correlations\" accepted at **ICCV 2025**"
 
 - date: 2025-04-30
   type: team
@@ -65,7 +75,7 @@
 - date: 2025-02-26
   type: paper
   title: "CVPR 2025 paper accepted"
-  text: "\"Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control\" accepted at **CVPR 2025**."
+  text: "\"Plug-and-Play Interpretable Responsible Text-to-Image Generation via Dual-Space Multi-facet Concept Control\" accepted at **CVPR 2025**"
 
 - date: 2025-02-10
   type: team
@@ -80,7 +90,7 @@
 - date: 2024-07-01
   type: paper
   title: "ECCV 2024 paper accepted"
-  text: "\"Regulating Model Reliance on Non-robust Features by Smoothing Input Marginal Density\" accepted at **ECCV 2024**."
+  text: "\"Regulating Model Reliance on Non-robust Features by Smoothing Input Marginal Density\" accepted at **ECCV 2024**"
 
 - date: 2021-08-01
   type: award
