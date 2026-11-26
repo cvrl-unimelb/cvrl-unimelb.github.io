@@ -13,9 +13,9 @@
 # =====================================================================
 
 - date: 2026-11-24
-  type: event
-  title: "We are now CVRL"
-  text: "Our group is now the **Computer Vision Research Lab (CVRL)** at The University of Melbourne, with a new logo and website."
+  type: service
+  title: "Lead CVPR 2027"
+  text: "Naveed Akhtar will be serving as a Lead Area Chair for IEEE CVPR 2027."
 
 - date: 2026-10-01
   type: paper
